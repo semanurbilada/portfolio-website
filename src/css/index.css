@@ -5,8 +5,9 @@
 
 @layer base{
   * {
+    text-align: center;
     font-family: 'Poppins';
-    background-color: rgb(174, 249, 224);
+    background-color: #aef9e0;
   }
 
   .animation {
