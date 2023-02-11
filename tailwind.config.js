@@ -22,9 +22,9 @@ module.exports = {
       },
       colors: {
         greenery: {
-          default: "#aef9e0", //background color
-          transparent: "#aef9e080",
-          100: '#d1fae5',
+          default: "#aef9e0", //custom
+          transparent: "#aef9e080", //custom
+          100: '#d1fae5', //background color
           300: '#6ee7b7',
           500: '#10b981', 
           700: '#047857',
