@@ -53,7 +53,7 @@ export default function Navbar() {
                     onClick={() => setIsNavbar(!isNavbar)}>
                     
                     <Icons
-                        iconName={"arrow"}
+                        iconName={"menu"}
                         className={`${isNavbar && "arrow-animation"} fill-greenery-100`}
                     />Semanur Bilada
 

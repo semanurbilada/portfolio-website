@@ -13,7 +13,7 @@ export default function Icons({ iconName, className }) {
 
     return (
         <>
-            {iconName === "arrow" && arrowIcon}
+            {iconName === "menu" && arrowIcon}
         </>
     );
 
