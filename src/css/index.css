@@ -9,27 +9,31 @@
     font-family: 'Poppins', cursive;
   }
 
-  html {
-    background-color: #d1fae5;
+  .custom-background {
+    @apply bg-gradient-to-r from-greenery-100 via-greenery-default to-greenery-500 animate-gradient-x;
   }
-
+  
   .animation {
-      @apply transition-all duration-300 ease-in-out
+      @apply transition-all duration-300 ease-in-out;
   }
 
   .nav-item {
-    @apply cursor-pointer hover:text-greenery-900 animation
+    @apply cursor-pointer hover:text-greenery-900 animation;
   }
 
   .nav-active {
-    @apply text-greenery-900 underline underline-offset-8 decoration-2
+    @apply text-greenery-900 underline underline-offset-8 decoration-2;
   }
 
   .mobile-nav-active {
-    @apply text-greenery-900 
+    @apply text-greenery-900; 
+  }
+
+  .mobile-active {
+    @apply opacity-100 pointer-events-auto animation !important;
   }
 
   .arrow-animation {
-    @apply rotate-180
+    @apply rotate-45 animation !important;
   }
 }
