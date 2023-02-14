@@ -26,11 +26,11 @@ module.exports = {
       'keyframes': {
         'gradient-x': {
           '0%, 100%': {
-            'background-size':'180% 180%',
+            'background-size':'400% 400%',
             'background-position': 'left center'
           },
           '50%': {
-            'background-size':'180% 180%',
+            'background-size':'200% 200%',
             'background-position': 'right center'
           }
         }
@@ -49,6 +49,12 @@ module.exports = {
           400: "#73787c",
           800: "#393d40",
         },
+      },
+      fontFamily: {
+        fira: ["Fira Code", "sans-serif"],
+      },
+      boxShadow: {
+        '3xl': 'inset 0 35px 60px -15px rgba(0, 0, 0, 1)',
       },
     },
   },

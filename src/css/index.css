@@ -9,7 +9,7 @@
   }
 
   .custom-background {
-    @apply bg-gradient-to-r from-greenery-100 via-greenery-default to-greenery-500 animate-gradient-x;
+    @apply bg-gradient-to-r from-greenery-100 via-greenery-default to-greenery-300 animate-gradient-x;
   }
   
   .animation {
