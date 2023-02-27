@@ -1,13 +1,17 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Icons from './icons/Icons.js';
-
 
 export default function Navbar() {
     const location = useLocation().pathname;
     const [isNavbar, setIsNavbar] = useState(false);
-    const start = window.scrollTo({ top:0, behavior: "smooth" });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
 
     return(
         <header className="h-full w-full relative top-9">
@@ -63,35 +67,35 @@ export default function Navbar() {
                     
                     <Icons
                         iconName={"menu"}
-                        className={`${isNavbar && "arrow-animation"} fill-greenery-100`}
+                        className={`${isNavbar && "icon-animation"} fill-greenery-100`}
                     />Semanur Bilada
 
                     <ul className={`${isNavbar && "mobile-active"} absolute top-16 p-5 left-0 right-0 space-y-3 pointer-events-none animation bg-greenery-500 rounded-xl shadow-2xl z-50 font-bold opacity-0`}>
                         <li className={`nav-item ${
                                 location === "/" ? "nav-active" : ""
                             }`}
-                            onClick={start}>
+                            onClick={scrollToTop}>
                             <Link to="/">HOME</Link>
                         </li>
 
                         <li className={`nav-item ${
                                 location === "/projects" ? "nav-active" : ""
                             }`}
-                            onClick={start}>
+                            onClick={scrollToTop}>
                             <Link to="/projects">MY PROJECTS</Link>  
                         </li>
 
                         <li className={`nav-item ${
                                 location === "/about" ? "nav-active" : ""
                             }`}
-                            onClick={start}>
+                            onClick={scrollToTop}>
                             <Link to="/about">ABOUT ME</Link>  
                         </li>
 
                         <li className={`nav-item ${
                                 location === "/contact" ? "nav-active" : ""
                             }`}
-                            onClick={start}>
+                            onClick={scrollToTop}>
                             <Link to="/contact">CONTACT</Link>  
                         </li>
                     </ul>

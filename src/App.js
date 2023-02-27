@@ -1,4 +1,8 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { 
+  Route, 
+  Routes,
+  HashRouter as Router 
+} from "react-router-dom";
 
 import Home from "./pages/Home.js";
 import Projects from "./pages/Projects.js";
@@ -6,8 +10,6 @@ import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 
 import Navbar from "./components/Navbar";
-import './css/index.css';
-
 
 export default function App() {
   return (

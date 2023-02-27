@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     screens: {
       sm: "640px",
-      md: "768px",
+      md: "800px",
       lg: "992px",
       xl: "1080px",
       "2xl": "1294px",
@@ -37,11 +37,11 @@ module.exports = {
       },
       colors: {
         greenery: {
-          default: "#aef9e0", //custom -> bg
+          default: "#aef9e0", //custom : bg
           transparent: "#aef9e080", //custom
           100: '#d1fae5', //bg
-          300: '#6ee7b7',
-          500: '#10b981', //bg
+          300: '#6ee7b7', //bg
+          500: '#10b981',
           700: '#047857',
           900: '#134e4a'
         },
@@ -52,6 +52,7 @@ module.exports = {
       },
       fontFamily: {
         fira: ["Fira Code", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       boxShadow: {
         '3xl': 'inset 0 35px 60px -15px rgba(0, 0, 0, 1)',

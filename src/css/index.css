@@ -5,17 +5,17 @@
 
 @layer base{
   * {
-    @apply text-center font-['Poppins'];
+    @apply text-center font-poppins;
+  }
+
+  .animation {
+    @apply transition-all duration-300 ease-in-out;
   }
 
   .custom-background {
     @apply bg-gradient-to-r from-greenery-100 via-greenery-default to-greenery-300 animate-gradient-x;
   }
   
-  .animation {
-      @apply transition-all duration-300 ease-in-out;
-  }
-
   .nav-item {
     @apply relative cursor-pointer hover:text-greenery-900 animation;
   }
@@ -36,7 +36,11 @@
     @apply opacity-100 pointer-events-auto animation !important;
   }
 
-  .arrow-animation {
-    @apply rotate-45 animation !important;
+  .icon-animation {
+    @apply rotate-45 scale-90 animation !important;
+  }
+
+  .section-default {
+    @apply container min-h-screen my-20 md:my-10;
   }
 }

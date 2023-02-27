@@ -1,7 +1,6 @@
 export default function Icons({ iconName, className }) {
-    const arrowIcon = (
-        <svg 
-            className={className} 
+    const menuIcon = (
+        <svg className={className} 
             fill="#d1fae5" 
             width="28" height="28" 
             viewBox="0 0 32 32" 
@@ -13,8 +12,7 @@ export default function Icons({ iconName, className }) {
 
     return (
         <>
-            {iconName === "menu" && arrowIcon}
+            {iconName === "menu" && menuIcon}
         </>
     );
-
 }
