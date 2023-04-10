@@ -15,6 +15,7 @@ export default function Home() {
             {/* 
                 - intro (animation kullanılacak !) 
                 - tech i use for my projects;
+                    - "view on github" yazısı
 
                 <div className="h-screen flex">
                     <h2>The TECH i use :</h2>
