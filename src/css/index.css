@@ -40,7 +40,7 @@
     @apply rotate-45 scale-90 animation !important;
   }
 
-  .section-default {
+  .page-default {
     @apply container min-h-screen my-2 md:my-0;
   }
 }

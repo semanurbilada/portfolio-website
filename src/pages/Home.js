@@ -1,6 +1,7 @@
 export default function Home() {
+    
     return(
-        <section className="section-default flex flex-col items-center justify-center">
+        <div className="page-default flex flex-col items-center justify-center">
             <div className="h-screen flex md:flex-row flex-col items-center justify-center text-3xl md:gap-0 gap-8">
                 <img
                     className="rounded-full md:w-60 md:h-60 w-44 h-44 md:hover:scale-105 md:cursor-pointer animation md:top-60 top-0 object-cover"
@@ -21,6 +22,6 @@ export default function Home() {
                     <h2>The TECH i use :</h2>
                 </div>
             */}
-        </section>
+        </div>
     );
 }

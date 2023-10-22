@@ -1,6 +1,10 @@
+import ComingSoon from "../components/ComingSoon";
+
 export default function Projects() {
+
     return(
-        <section className="section-default flex items-center justify-center">
+        <div className="page-default flex items-center justify-center">
+            <ComingSoon />
             {/* 
                 my projects;
                 - freelance front-end
@@ -8,6 +12,6 @@ export default function Projects() {
 
                 swiper kullanılabilir...
             */}
-        </section>
+        </div>
     );
 }

@@ -1,10 +1,14 @@
+import ComingSoon from "../components/ComingSoon";
+
 export default function About() {
+
     return(
-        <section className="section-default flex items-center justify-center">
+        <div className="page-default flex items-center justify-center">
+            <ComingSoon />
             {/* 
                 - about me infos
                 - button for personal resume
             */}
-        </section>
+        </div>
     );    
 }
