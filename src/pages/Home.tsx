@@ -1,4 +1,6 @@
-export default function Home() {
+import React from "react";
+
+const Home: React.FC = () => {
     
     return(
         <div className="page-default flex flex-col items-center justify-center">
@@ -25,3 +27,5 @@ export default function Home() {
         </div>
     );
 }
+
+export default Home;

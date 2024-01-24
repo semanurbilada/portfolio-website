@@ -1,8 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Icons from './icons/Icons.js';
 
-export default function Navbar() {
+const Navbar: React.FC = () => {
     const location = useLocation().pathname;
     const [isNavbar, setIsNavbar] = useState(false);
 
@@ -104,3 +104,5 @@ export default function Navbar() {
         </header>
     );
 }
+
+export default Navbar;

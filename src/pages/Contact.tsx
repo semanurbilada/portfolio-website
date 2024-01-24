@@ -1,4 +1,5 @@
-import ComingSoon from "../components/ComingSoon";
+import React from "react";
+import ComingSoon from "../components/ComingSoon.tsx";
 
 export default function Contact() {
 

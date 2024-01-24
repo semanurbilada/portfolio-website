@@ -1,5 +1,6 @@
-export default function ComingSoon() {
+import React from "react";
 
+const ComingSoon: React.FC = () => {
   return (
     <section className="flex items-center justify-center">
       <h1 className="text-4xl font-bold md:text-6xl text-gray-800">
@@ -8,3 +9,5 @@ export default function ComingSoon() {
     </section>
   );
 }
+
+export default ComingSoon;
