@@ -11,7 +11,7 @@ import React from "react";
 function App() {
   return (
     <div className="custom-background w-full overflow-hidden">
-      <div className="container">
+      <div className="container flex flex-col items-center justify-center">
         <Router>
           <Navbar />
           <Routes>
@@ -21,6 +21,12 @@ function App() {
             <Route path="/contact" element={<Contact />}/>
           </Routes>
         </Router>
+
+        <footer className="text-center w-full">
+          <ul className="text-sm text-greenery-900 md:-m-8 -m-10">
+            <li>Copyright © 2024 | Made by Semanur Bilada</li>
+          </ul>
+        </footer>
       </div>
     </div>
   );
