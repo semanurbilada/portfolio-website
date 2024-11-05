@@ -5,7 +5,7 @@ import React from "react";
 
 const About: React.FC = () => {
     return(
-        <div className="page-default flex flex-col items-center justify-evenly">
+        <div className="page-default my-20 md:my-2 flex flex-col items-center justify-evenly">
             <ol className="relative text-start border-s border-gray-700 ">  
                 <li className="mb-10 ms-4 flex ">
                     <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border-s border-gray-900 bg-gray-700"></div>

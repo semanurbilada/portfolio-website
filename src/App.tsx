@@ -11,7 +11,7 @@ import React from "react";
 function App() {
   return (
     <div className="custom-background w-full overflow-hidden">
-      <div className="container flex flex-col items-center justify-center">
+      <div className="container flex flex-col gap-10 md:gap-0 items-center justify-center">
         <Router>
           <Navbar />
           <Routes>
