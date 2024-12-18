@@ -11,7 +11,7 @@ export default function Projects() {
                 - freelance front-end
                 - robotics (teknofest)
 
-                swiper kullanılabilir...
+                vertical (mouse-wheel) swiper kullanılabilir...
             */}
         </div>
     );
