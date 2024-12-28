@@ -4,7 +4,7 @@ import React from "react";
 const About: React.FC = () => {
     return(
         <div className="page-default flex flex-col items-center justify-center">
-            <ol className="relative text-start border-s border-gray-700 ">  
+            <ol className="relative text-start border-s border-gray-700">  
                 <li className="mb-10 mt-5 ms-4">
                     <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border-s border-gray-900 bg-gray-700"></div>
                     <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2024 - August 2024</time>
@@ -12,7 +12,7 @@ const About: React.FC = () => {
                         <a href="https://deltav.com.tr/en/" target="_blank" rel="noreferrer">ENGINEER INTERN - DeltaV Space Technologies</a>
                     </h3>
                     <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                        Participation of the field tests and work in R&D (Research and Development) for communication.
+                        Participation of the field tests and work in Research and Development (R&D).
                     </p>
                 </li>  
 
