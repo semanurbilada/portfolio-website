@@ -31,15 +31,10 @@ function App() {
 
         {/* Github Button */}
         <div className="relative">
-          <div className="fixed md:bottom-10 md:right-5 right-5 top-9 md:top-auto z-50">
-            <a
-              href="https://github.com/semanurbilada"
-              className="hover:scale-110 animation shadow-2xl"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Icons
-                iconName="github"
+          <div className="fixed md:bottom-10 md:right-5 right-5 top-9 hover:scale-110 animation md:top-auto z-50">
+            <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
+              <Icons 
+                iconName="github" 
                 className=""
               />
             </a>
