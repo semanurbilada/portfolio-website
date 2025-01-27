@@ -30,7 +30,6 @@ function App() {
         </footer>
 
         {/* Github Button */}
-        {/* TODO: Button right side should be same as navbar right side! */}
         <div className="fixed md:bottom-10 md:right-[313px] right-[38px] top-9 hover:scale-110 animation md:top-auto z-50">
           <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
             <Icons 
