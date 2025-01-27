@@ -7,6 +7,7 @@ import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 
 import Navbar from "./components/Navbar.tsx";
+import Icons from "./components/icons/Icons.js";
 
 function App() {
   return (
@@ -23,10 +24,27 @@ function App() {
         </Router>
 
         <footer className="text-center w-full">
-          <ul className="text-sm text-greenery-900 md:-m-8 -m-10">
+          <ul className="text-sm text-greenery-900 md:-m-8 m-0">
             <li>Copyright © 2024 | Made by Semanur Bilada</li>
           </ul>
         </footer>
+
+        {/* Github Button */}
+        <div className="relative">
+          <div className="fixed md:bottom-10 md:right-5 right-5 top-9 md:top-auto z-50">
+            <a
+              href="https://github.com/semanurbilada"
+              className="hover:scale-110 animation shadow-2xl"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Icons
+                iconName="github"
+                className=""
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
