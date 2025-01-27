@@ -24,21 +24,20 @@ function App() {
         </Router>
 
         <footer className="text-center w-full">
-          <ul className="text-sm text-greenery-900 md:-m-8 m-0">
+          <ul className="text-sm text-greenery-900 md:-m-8 m-4">
             <li>Copyright © 2024 | Made by Semanur Bilada</li>
           </ul>
         </footer>
 
         {/* Github Button */}
-        <div className="relative">
-          <div className="fixed md:bottom-10 md:right-5 right-5 top-9 hover:scale-110 animation md:top-auto z-50">
-            <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
-              <Icons 
-                iconName="github" 
-                className=""
-              />
-            </a>
-          </div>
+        {/* TODO: Button right side should be same as navbar right side! */}
+        <div className="fixed md:bottom-10 md:right-[313px] right-[38px] top-9 hover:scale-110 animation md:top-auto z-50">
+          <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
+            <Icons 
+              iconName="github" 
+              className=""
+            />
+          </a>
         </div>
       </div>
     </div>
