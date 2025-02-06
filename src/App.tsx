@@ -30,13 +30,29 @@ function App() {
         </footer>
 
         {/* Github Button */}
-        <div className="fixed md:bottom-10 md:right-[313px] right-[38px] top-9 hover:scale-110 animation md:top-auto z-50">
-          <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
-            <Icons 
-              iconName="github" 
-              className=""
-            />
-          </a>
+        <div className="fixed md:bottom-10 md:right-44 right-10 top-9 md:top-auto z-50">
+          <div className="flex items-center justify-center gap-6">
+            <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
+              <Icons 
+                iconName="github"
+                className="hover:scale-110 animation"
+              />
+            </a>
+
+            <a href="mailto:semanurbilada@gmail.com" target="_blank" rel="noreferrer">
+              <Icons
+                iconName="mail" 
+                className="hover:scale-110 animation"
+              />
+            </a>
+
+            <a href="https://www.linkedin.com/in/semanur-bilada/" target="_blank" rel="noreferrer">
+              <Icons
+                iconName="linkedin" 
+                className="hover:scale-110 animation"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
