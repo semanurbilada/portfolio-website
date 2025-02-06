@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
                 </Link>
 
                 <nav className="px-14 py-6 bg-greenery-500 rounded-full shadow-2xl">
-                    <ul className="flex items-center justify-center gap-12 text-lg text-greenery-100 font-semibold animation">
+                    <ul className="flex items-center justify-center gap-12 text-lg text-greenery-100 font-bold animation">
                         <li className={`nav-item group ${location === "/" ? "nav-active" : ""}`}>
                             <Link to="/">HOME</Link>
                             <span className="nav-hover-left"></span>
@@ -42,17 +42,17 @@ const Navbar: React.FC = () => {
                             <span className="nav-hover-left"></span>
                             <span className="nav-hover-right"></span>
                         </li>
-                        <li className={`nav-item group ${location === "/contact" ? "nav-active" : ""}`}>
+                        {/* <li className={`nav-item group ${location === "/contact" ? "nav-active" : ""}`}>
                             <Link to="/contact">CONTACT</Link>
                             <span className="nav-hover-left"></span>
                             <span className="nav-hover-right"></span>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
             </div>
 
             {/* Mobile Navbar */}
-            <nav className="md:hidden fixed top-9 left-9 z-50">
+            <nav className="md:hidden fixed top-9 left-9 z-50 font-medium">
                 <li
                     className="relative flex gap-1 px-4 py-3 rounded-full bg-greenery-900 text-greenery-100 text-lg cursor-pointer shadow-2xl list-none animation hover:bg-gradient-to-r hover:from-greenery-900 hover:to-greenery-700"
                     onClick={() => setIsNavbar(!isNavbar)}
@@ -91,12 +91,12 @@ const Navbar: React.FC = () => {
                         <Link to="/about">ABOUT ME</Link>
                     </li>
 
-                    <li 
+                    {/* <li 
                         className={`nav-item ${location === "/contact" ? "nav-active" : ""}`} 
                         onClick={() => { setIsNavbar(false); scrollToTop(); }}
                     >
                         <Link to="/contact">CONTACT</Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
 
