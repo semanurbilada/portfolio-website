@@ -23,37 +23,48 @@ function App() {
           </Routes>
         </Router>
 
+        {/* Fixed Contact Buttons */}
+        <div className="container fixed md:bottom-10 bottom-auto top-9 md:top-auto md:z-50">
+          <div className="flex md:flex-row flex-col items-end md:items-center justify-end md:justify-between">
+            {/* Rocket Icon (hidden on mobile) */}
+            <div>
+              <Icons 
+                iconName="rocket"
+                className="hidden md:inline md:hover:scale-110 animate-bounce animation"
+              />
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex md:flex-row flex-col items-center justify-center md:gap-6 gap-2">
+              <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
+                <Icons 
+                  iconName="github"
+                  className="md:hover:scale-110 animation"
+                />
+              </a>
+
+              <a href="mailto:semanurbilada@gmail.com" target="_blank" rel="noreferrer">
+                <Icons
+                  iconName="mail" 
+                  className="md:hover:scale-110 animation"
+                />
+              </a>
+
+              <a href="https://www.linkedin.com/in/semanur-bilada/" target="_blank" rel="noreferrer">
+                <Icons
+                  iconName="linkedin" 
+                  className="md:hover:scale-110 animation"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <footer className="text-center w-full">
           <ul className="text-sm text-greenery-900 md:-m-8 m-4">
             <li>Copyright © 2024 | Made by Semanur Bilada</li>
           </ul>
         </footer>
-
-        {/* Github Button */}
-        <div className="fixed md:bottom-10 md:right-44 right-10 top-9 md:top-auto z-50">
-          <div className="flex items-center justify-center gap-6">
-            <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
-              <Icons 
-                iconName="github"
-                className="hover:scale-110 animation"
-              />
-            </a>
-
-            <a href="mailto:semanurbilada@gmail.com" target="_blank" rel="noreferrer">
-              <Icons
-                iconName="mail" 
-                className="hover:scale-110 animation"
-              />
-            </a>
-
-            <a href="https://www.linkedin.com/in/semanur-bilada/" target="_blank" rel="noreferrer">
-              <Icons
-                iconName="linkedin" 
-                className="hover:scale-110 animation"
-              />
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   );
