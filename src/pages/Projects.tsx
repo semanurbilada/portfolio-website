@@ -4,7 +4,7 @@ import ComingSoon from "../components/ComingSoon.tsx";
 export default function Projects() {
 
     return(
-        <div className="page-default flex items-center justify-center">
+        <div className="page-default my-0 flex items-center justify-center">
             <ComingSoon />
             {/* 
                 my projects;

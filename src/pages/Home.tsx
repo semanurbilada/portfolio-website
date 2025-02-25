@@ -36,7 +36,7 @@ const Home: React.FC = () => {
     }, [contentArray.length]);
 
     return (
-        <div className="page-default flex flex-col items-center justify-center">
+        <div className="page-default my-0 flex flex-col items-center justify-center">
             <section className="h-screen flex md:flex-row flex-col items-center justify-center text-3xl md:gap-2 gap-8">
                 <img
                     className="rounded-full md:w-60 md:h-60 w-44 h-44 md:hover:scale-105 md:cursor-pointer animation md:top-60 top-0 object-cover"
