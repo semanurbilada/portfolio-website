@@ -41,7 +41,7 @@
   }
 
   .page-default {
-    @apply container min-h-screen mt-16 mb-6 md:my-0;
+    @apply container min-h-screen mt-24 mb-6 md:my-0;
   }
 
   .about-title {
