@@ -62,7 +62,7 @@ function App() {
 
         <footer className="text-center w-full">
           <ul className="text-sm text-greenery-900 md:-m-8 m-4">
-            <li>Copyright © 2024 | Made by Semanur Bilada</li>
+            <li>Copyright © 2026 | Made by Semanur BİLADA</li>
           </ul>
         </footer>
       </div>
