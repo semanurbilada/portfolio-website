@@ -48,10 +48,11 @@ const Home: React.FC = () => {
                 <div>
                     <h1 className="font-fira md:text-end text-center md:text-3xl text-xl tracking-wide md:leading-10">
                         {/* {contentArray[currentIndex].h1} */}
-                        Information Systems Engineering Student who currently interested with; <br />
-                        <span className="bg-greenery-default italic">Front-End</span>,{" "}
+                        Assistant Project Specialist,<br></br>MSc Electrical and Electronics Engineering Student<br></br>who currently interested with; <br />
+                        <span className="bg-greenery-default italic">AI</span>,{" "}
                         <span className="p-1 bg-greenery-default italic">Robotics</span> &{" "}
-                        <span className="p-1 bg-greenery-default italic">Aerospace !</span>
+                        <span className="p-1 bg-greenery-default italic">Aerospace</span> in{" "}
+                        <span className="p-1 bg-greenery-default italic">Marine R&D applications !</span>
                     </h1>
                 </div>
             </section>
