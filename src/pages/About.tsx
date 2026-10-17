@@ -1,68 +1,246 @@
 import React from "react";
 
 const About: React.FC = () => {
-    return(
-        <div className="page-default flex flex-col md:flex-row gap-28 md:gap-8 items-center justify-evenly">
-            {/* Experience Timeline */}
-            <div className="md:w-2/3">
-                <ol className="relative text-start text-sm md:text-base border-s border-gray-700">  
-                    <li className="mb-10 mt-0 ms-4 text-start">
-                        <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border-s border-gray-900 bg-gray-700"></div>
-                        <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2024 - August 2024</time>
-                        <h3 className="about-title text-start"> 
-                            <a href="https://deltav.com.tr/en/" target="_blank" rel="noreferrer">ENGINEER INTERN - DeltaV Space Technologies</a>
-                        </h3>
-                        <p className="about-p">Participation in field tests and work in Research and Development (R&D).</p>
-                    </li>  
+    return (
+        <div className="page-default w-full min-h-screen">
+            <main className="w-full max-w-6xl mx-auto px-6 md:px-10 pt-36 md:pt-44 pb-24">
+                {/* Page Header */}
+                <header className="text-center mb-14 md:mb-20">
+                    <h1 className="font-fira md:text-4xl font-semibold">
+                        <span className="bg-greenery-default text-2xl italic px-2">
+                            Experience & Education
+                        </span>
+                    </h1>
 
-                    <li className="mb-10 ms-4 text-start">
-                        <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border-s border-gray-900 bg-gray-700"></div>
-                        <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">December 2023 - May 2023</time>
-                        <h3 className="about-title">
-                            <a href="https://pirireis.edu.tr/en/" target="_blank" rel="noreferrer">STUDENT ASSISTANT - Piri Reis University</a> - Faculty of Engineering
-                        </h3>
-                    </li>
+                    <p className="about-p mt-5 text-sm md:text-base max-w-2xl mx-auto text-center leading-relaxed">
+                        My academic background, professional experience
+                        and ongoing research interests.
+                    </p>
+                </header>
 
-                    <li className="mb-10 ms-4 text-start">
-                        <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border-s border-gray-900 bg-gray-700"></div>
-                        <time className=" text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2023 - November 2023</time>
-                        <h3 className="about-title">
-                            <a href="https://www.t3vakfi.org/en/" target="_blank" rel="noreferrer">RISING STAR SCHOLARSHIP - T3 Foundation</a>
-                        </h3>
-                        <p className="about-p">Worked in Information Technologies Coordination: Front-End side of a Full-Stack Project.</p>
-                        <p className="about-p">Served as a member of the Defense, Aerospace Technologies Committee.</p>
-                    </li>
+                {/* Main Content */}
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-14 lg:gap-16 items-start">
+                    {/* Professional Experience */}
+                    <section className="lg:col-span-3">
 
-                    <li className="-mb-14 ms-4 text-start">
-                        <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border-s border-gray-900 bg-gray-700"></div>
-                        <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2023 - August 2023</time>
-                        <h3 className="about-title"> 
-                            <a href="https://intellium.com.tr" target="_blank" rel="noreferrer">SUMMER INTERN - Intellium</a>
-                        </h3>
-                        <p className="about-p">Developed AI side of a Full-Stack Project using Python and TensorFlow.</p>
-                    </li>
-                </ol>
-            </div>
+                        <h2 className="font-fira text-xl md:text-2xl font-semibold mb-10">
+                            Professional Experience
+                        </h2>
 
-            {/* Education Section */}
-            <div className="md:w-1/3 flex flex-col items-center justify-center md:gap-20 gap-0">
-                <h2 className="hidden md:block bg-greenery-default italic font-semibold text-center text-lg md:text-xl">
-                    Experience & Education Details
-                </h2>
+                        <ol className="relative border-s border-gray-700 ml-2">
+                            {/* Current Position */}
+                            <li className="mb-12 ms-6 relative">
+                                <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+                                <time className="text-sm text-gray-500">
+                                    November 2025 - Present
+                                </time>
 
-                <div className="bg-greenery-500 rounded-full p-8 shadow-xl hover:shadow-2xl animation">
-                    <h3 className="md:text-base text-sm font-semibold">
-                        <a href="https://pirireis.edu.tr/en/" target="_blank" rel="noreferrer">
-                            Piri Reis University
-                        </a> 
-                    </h3>
-                    <p className="text-greenery-100 text-sm">2021 - Present</p>
-                    <p className="about-title text-center md:text-base text-sm font-semibold mt-1">B.Sc. in Information Systems Engineering</p>
-                    <p className="about-p text-greenery-100 text-center text-sm">Senior Year Student | AI, Robotics and Autonomy Projects</p>
+                                <h3 className="about-title mt-2">
+                                    <a
+                                        href="https://pirireis.edu.tr/en/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        ASSISTANT PROJECT SPECIALIST
+                                    </a>
+                                </h3>
+
+                                <p className="font-medium text-sm md:text-base mt-1">
+                                    Piri Reis University
+                                </p>
+
+                                <p className="about-p mt-3 leading-relaxed">
+                                    Research Dean's Office | Supporting academic
+                                    research projects, university-wide R&D
+                                    activities and project management processes.
+                                </p>
+                            </li>
+
+                            {/* DeltaV */}
+                            <li className="mb-12 ms-6 relative">
+                                <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+                                <time className="text-sm text-gray-500">
+                                    July 2024 - August 2024
+                                </time>
+
+                                <h3 className="about-title mt-2">
+                                    <a
+                                        href="https://deltav.com.tr/en/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        R&D ENGINEER INTERN
+                                    </a>
+                                </h3>
+
+                                <p className="font-medium text-sm md:text-base mt-1">
+                                    DeltaV Space Technologies
+                                </p>
+
+                                <p className="about-p mt-3 leading-relaxed">
+                                    Worked on avionics communication systems
+                                    and participated in rocket operations,
+                                    field tests and R&D activities.
+                                </p>
+                            </li>
+
+                            {/* T3 Foundation */}
+                            <li className="mb-12 ms-6 relative">
+                                <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+                                <time className="text-sm text-gray-500">
+                                    February 2023 - November 2023
+                                </time>
+
+                                <h3 className="about-title mt-2">
+                                    <a
+                                        href="https://www.t3vakfi.org/en/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        RISING STAR SCHOLAR
+                                    </a>
+                                </h3>
+
+                                <p className="font-medium text-sm md:text-base mt-1">
+                                    T3 Foundation
+                                </p>
+
+                                <p className="about-p mt-3 leading-relaxed">
+                                    Contributed to full-stack development,
+                                    primarily focusing on front-end technologies,
+                                    and participated in defense and aerospace
+                                    technology initiatives.
+                                </p>
+                            </li>
+
+                            {/* Intellium */}
+                            <li className="ms-6 relative">
+                                <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+                                <time className="text-sm text-gray-500">
+                                    July 2023 - August 2023
+                                </time>
+
+                                <h3 className="about-title mt-2">
+                                    <a
+                                        href="https://intellium.com.tr"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        SOFTWARE ENGINEER INTERN
+                                    </a>
+                                </h3>
+
+                                <p className="font-medium text-sm md:text-base mt-1">
+                                    Intellium
+                                </p>
+
+                                <p className="about-p mt-3 leading-relaxed">
+                                    Developed a machine learning-based chatbot
+                                    for a full-stack application using
+                                    Python and TensorFlow.
+                                </p>
+                            </li>
+                        </ol>
+                    </section>
+
+                    {/* Education */}
+                    <section className="lg:col-span-2 w-full">
+                        <h2 className="font-fira text-xl md:text-2xl font-semibold mb-10">
+                            Education
+                        </h2>
+
+                        <div className="flex flex-col gap-6">
+                            {/* Master's Degree */}
+                            <div className="bg-greenery-500 rounded-3xl p-7 shadow-xl hover:shadow-2xl animation">
+                                <p className="text-greenery-100 text-sm mb-3">
+                                    2025 - Present
+                                </p>
+
+                                <h3 className="font-semibold text-lg">
+                                    <a
+                                        href="https://pirireis.edu.tr/en/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Piri Reis University (PRU)
+                                    </a>
+                                </h3>
+
+                                <p className="font-semibold mt-4 leading-relaxed">
+                                    M.Sc. in Electrical and Electronics Engineering
+                                </p>
+
+                                <p className="text-greenery-100 text-sm mt-3">
+                                    AI & Trustworthy AI
+                                </p>
+                            </div>
+
+                            {/* Bachelor's Degree */}
+                            <div className="bg-greenery-500 rounded-3xl p-7 shadow-xl hover:shadow-2xl animation">
+                                <p className="text-greenery-100 text-sm mb-3">
+                                    2021 - 2025
+                                </p>
+
+                                <h3 className="font-semibold text-lg">
+                                    <a
+                                        href="https://pirireis.edu.tr/en/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Piri Reis University (PRU)
+                                    </a>
+                                </h3>
+
+                                <p className="font-semibold mt-4 leading-relaxed">
+                                    B.Sc. in Information Systems Engineering
+                                </p>
+
+                                <p className="text-greenery-100 text-sm mt-3">
+                                    Robotics, Computer Vision & Autonomous Systems
+                                </p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </div>
+
+                {/* Research Interests */}
+                <section className="mt-20 md:mt-24">
+                    <div className="border-t border-gray-700/30 pt-12">
+                        <h2 className="font-fira text-xl md:text-2xl font-semibold mb-5">
+                            <span className="bg-greenery-default italic px-2">
+                                Research Interests
+                            </span>
+                        </h2>
+
+                        <p className="about-p text-sm md:text-base leading-relaxed max-w-3xl mb-7">
+                            My current research focuses on Trustworthy AI, with particular interests in explainable and
+                            interpretable AI, model robustness and vision-language models.
+                            I am also interested in applying AI to computer vision, robotics and autonomous systems.
+                        </p>
+
+                        {/* Research Topic Tags */}
+                        <div className="flex flex-wrap gap-3">
+                            {[
+                                "Trustworthy AI",
+                                "Explainable & Interpretable AI",
+                                "Model Robustness",
+                                "Vision-Language Models",
+                                "Computer Vision",
+                                "Autonomous Robotics"
+                            ].map((topic) => (
+                                <span
+                                    key={topic}
+                                    className="bg-greenery-500/20 border border-greenery-500/40 rounded-full px-4 py-2 text-sm font-medium"
+                                >
+                                    {topic}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-    );    
-}
+    );
+};
 
 export default About;
