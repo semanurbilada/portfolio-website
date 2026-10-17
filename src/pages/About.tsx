@@ -244,7 +244,7 @@ const About: React.FC = () => {
                 </div>
 
                 {/* Research Interests */}
-                <section className="w-full mt-20 md:mt-24">
+                <section className="relative z-10 w-full mt-20 md:mt-24">
                     <div className="w-full border-t border-gray-700/30 pt-12 md:pt-16">
                         {/* Section Title */}
                         <div className="text-center mb-6">
