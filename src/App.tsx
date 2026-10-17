@@ -29,13 +29,13 @@ function App() {
             {/* Rocket Icon (hidden on mobile) */}
             <div>
               <Icons 
-                iconName="rocket"
+                iconName="robot"
                 className="hidden md:inline md:hover:scale-110 animate-bounce animation"
               />
             </div>
 
             {/* Social Icons */}
-            <div className="flex md:flex-row flex-col items-center justify-center md:gap-6 gap-2">
+            <div className="flex flex-col items-center justify-center md:gap-6 gap-2">
               <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
                 <Icons 
                   iconName="github"
