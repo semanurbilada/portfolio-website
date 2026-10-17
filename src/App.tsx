@@ -23,12 +23,13 @@ function App() {
           </Routes>
         </Router>
 
+        
         {/* Fixed Contact Buttons */}
-        <div className="container fixed md:bottom-10 bottom-auto top-9 md:top-auto md:z-50">
+        <div className="container fixed md:bottom-10 bottom-auto top-9 md:top-auto md:z-50 pointer-events-none">
           <div className="flex md:flex-row flex-col items-end md:items-center justify-end md:justify-between">
-            {/* Rocket Icon (hidden on mobile) */}
+            {/* Robot Icon (hidden on mobile) */}
             <div>
-              <Icons 
+              <Icons
                 iconName="robot"
                 className="hidden md:inline md:hover:scale-110 animate-bounce animation"
               />
@@ -36,23 +37,36 @@ function App() {
 
             {/* Social Icons */}
             <div className="flex flex-col items-center justify-center md:gap-6 gap-2">
-              <a href="https://github.com/semanurbilada" target="_blank" rel="noreferrer">
-                <Icons 
+              <a
+                href="https://github.com/semanurbilada"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pointer-events-auto"
+              >
+                <Icons
                   iconName="github"
                   className="md:hover:scale-110 animation"
                 />
               </a>
 
-              <a href="mailto:semanurbilada@gmail.com" target="_blank" rel="noreferrer">
+              <a
+                href="mailto:semanurbilada@gmail.com"
+                className="pointer-events-auto"
+              >
                 <Icons
-                  iconName="mail" 
+                  iconName="mail"
                   className="md:hover:scale-110 animation"
                 />
               </a>
 
-              <a href="https://www.linkedin.com/in/semanur-bilada/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/semanur-bilada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pointer-events-auto"
+              >
                 <Icons
-                  iconName="linkedin" 
+                  iconName="linkedin"
                   className="md:hover:scale-110 animation"
                 />
               </a>
