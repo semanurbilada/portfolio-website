@@ -1,8 +1,17 @@
 import React from "react";
 
 const About: React.FC = () => {
+    const researchTopics = [
+        "Trustworthy AI",
+        "Explainable & Interpretable AI",
+        "Model Robustness",
+        "Vision-Language Models",
+        "Computer Vision",
+        "Autonomous Robotics"
+    ];
+
     return (
-        <div className="page-default w-full min-h-screen">
+        <div className="page-default relative z-0 w-full min-h-screen">
             <main className="w-full max-w-6xl mx-auto px-6 md:px-10 pt-36 md:pt-44 pb-24">
                 {/* Page Header */}
                 <header className="text-center mb-14 md:mb-20">
@@ -22,7 +31,6 @@ const About: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-5 gap-14 lg:gap-16 items-start">
                     {/* Professional Experience */}
                     <section className="lg:col-span-3">
-
                         <h2 className="font-fira text-xl md:text-2xl font-semibold mb-10">
                             Professional Experience
                         </h2>
@@ -31,6 +39,7 @@ const About: React.FC = () => {
                             {/* Current Position */}
                             <li className="mb-12 ms-6 relative">
                                 <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+
                                 <time className="text-sm text-gray-500">
                                     November 2025 - Present
                                 </time>
@@ -59,6 +68,7 @@ const About: React.FC = () => {
                             {/* DeltaV */}
                             <li className="mb-12 ms-6 relative">
                                 <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+
                                 <time className="text-sm text-gray-500">
                                     July 2024 - August 2024
                                 </time>
@@ -84,9 +94,38 @@ const About: React.FC = () => {
                                 </p>
                             </li>
 
+                            {/* Student Assistant */}
+                            <li className="mb-12 ms-6 relative">
+                                <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+
+                                <time className="text-sm text-gray-500">
+                                    December 2023 - May 2024
+                                </time>
+
+                                <h3 className="about-title mt-2">
+                                    <a
+                                        href="https://pirireis.edu.tr/en/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        STUDENT ASSISTANT
+                                    </a>
+                                </h3>
+
+                                <p className="font-medium text-sm md:text-base mt-1">
+                                    Piri Reis University
+                                </p>
+
+                                <p className="about-p mt-3 leading-relaxed">
+                                    Part-time Student Assistant at the
+                                    Faculty of Engineering.
+                                </p>
+                            </li>
+
                             {/* T3 Foundation */}
                             <li className="mb-12 ms-6 relative">
                                 <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+
                                 <time className="text-sm text-gray-500">
                                     February 2023 - November 2023
                                 </time>
@@ -116,6 +155,7 @@ const About: React.FC = () => {
                             {/* Intellium */}
                             <li className="ms-6 relative">
                                 <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[30px] bg-gray-700"></div>
+
                                 <time className="text-sm text-gray-500">
                                     July 2023 - August 2023
                                 </time>
@@ -204,33 +244,49 @@ const About: React.FC = () => {
                 </div>
 
                 {/* Research Interests */}
-                <section className="mt-20 md:mt-24">
-                    <div className="border-t border-gray-700/30 pt-12">
-                        <h2 className="font-fira text-xl md:text-2xl font-semibold mb-5">
-                            <span className="bg-greenery-default italic px-2">
-                                Research Interests
-                            </span>
-                        </h2>
+                <section className="w-full mt-20 md:mt-24">
+                    <div className="w-full border-t border-gray-700/30 pt-12 md:pt-16">
+                        {/* Section Title */}
+                        <div className="text-center mb-6">
+                            <h2 className="font-fira text-xl md:text-2xl font-semibold">
+                                <span className="bg-greenery-default italic px-2">
+                                    Research Interests
+                                </span>
+                            </h2>
+                        </div>
 
-                        <p className="about-p text-sm md:text-base leading-relaxed max-w-3xl mb-7">
-                            My current research focuses on Trustworthy AI, with particular interests in explainable and
-                            interpretable AI, model robustness and vision-language models.
-                            I am also interested in applying AI to computer vision, robotics and autonomous systems.
+                        {/* Research Description */}
+                        <p className="about-p text-sm md:text-base leading-relaxed max-w-4xl mx-auto text-center mb-10">
+                            My current research focuses on Trustworthy AI,
+                            with particular interests in explainable and
+                            interpretable AI, model robustness and
+                            vision-language models.
+                            I am also interested in applying AI to
+                            computer vision, robotics and autonomous systems.
                         </p>
 
                         {/* Research Topic Tags */}
-                        <div className="flex flex-wrap gap-3">
-                            {[
-                                "Trustworthy AI",
-                                "Explainable & Interpretable AI",
-                                "Model Robustness",
-                                "Vision-Language Models",
-                                "Computer Vision",
-                                "Autonomous Robotics"
-                            ].map((topic) => (
+                        <div className="w-full flex flex-wrap items-center justify-center gap-3 md:gap-4">
+                            {researchTopics.map((topic) => (
                                 <span
                                     key={topic}
-                                    className="bg-greenery-500/20 border border-greenery-500/40 rounded-full px-4 py-2 text-sm font-medium"
+                                    className="
+                                        inline-flex items-center justify-center
+                                        text-center
+                                        bg-greenery-500/20
+                                        border border-greenery-500/40
+                                        rounded-full
+                                        px-5 py-2.5
+                                        text-sm font-medium
+                                        shadow-sm
+                                        transition-all duration-300 ease-in-out
+                                        hover:bg-greenery-500/40
+                                        hover:border-greenery-500
+                                        hover:shadow-xl
+                                        hover:-translate-y-1
+                                        hover:scale-105
+                                        cursor-default
+                                    "
                                 >
                                     {topic}
                                 </span>
