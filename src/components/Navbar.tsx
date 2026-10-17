@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Icons from './icons/Icons.js';
+import Icons from "./icons/Icons.js";
 
 const Navbar: React.FC = () => {
     const location = useLocation().pathname;
@@ -13,40 +13,79 @@ const Navbar: React.FC = () => {
         });
     }
 
-    return(
-        <header className="h-full w-full relative top-9">
+    return (
+        <header className="relative w-full">
             {/* Desktop Navbar */}
-            <div className="container fixed top-9 hidden md:flex items-center justify-between gap-6">
-                <Link
-                    to="https://www.linkedin.com/in/semanur-bilada/"
-                    target='_blank'
-                    rel='noopener noreferrer nofollow'
-                    className="py-4 px-6 bg-gradient-to-r from-greenery-900 to-greenery-700 rounded-full text-greenery-100 text-xl hover:scale-110 animation shadow-2xl z-50">
+            <div className="container fixed top-9 z-50 hidden md:flex items-center justify-between gap-6">
+                {/* Profile Button */}
+                <a
+                    href="https://www.linkedin.com/in/semanur-bilada/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                        relative z-50
+                        py-4 px-6
+                        bg-gradient-to-r
+                        from-greenery-900 to-greenery-700
+                        rounded-full
+                        text-greenery-100 text-xl
+                        hover:scale-110
+                        animation shadow-2xl
+                        shrink-0
+                    "
+                >
                     Semanur Bilada
-                </Link>
+                </a>
 
-                <nav className="px-14 py-6 bg-greenery-500 rounded-full shadow-2xl">
+                {/* Navigation Links */}
+                <nav className="
+                    relative z-50
+                    px-14 py-6
+                    bg-greenery-500
+                    rounded-full
+                    shadow-2xl
+                    ring-1 ring-greenery-900/20
+                    shrink-0
+                    "
+                >
                     <ul className="flex items-center justify-center gap-12 text-lg text-greenery-100 font-bold animation">
-                        <li className={`nav-item group ${location === "/" ? "nav-active" : ""}`}>
-                            <Link to="/">HOME</Link>
+
+                        <li
+                            className={`nav-item group ${
+                                location === "/" ? "nav-active" : ""
+                            }`}
+                        >
+                            <Link to="/" onClick={scrollToTop}>
+                                HOME
+                            </Link>
                             <span className="nav-hover-left"></span>
                             <span className="nav-hover-right"></span>
                         </li>
-                        <li className={`nav-item group ${location === "/projects" ? "nav-active" : ""}`}>
-                            <Link to="/projects">MY PROJECTS</Link>
+
+                        <li
+                            className={`nav-item group ${
+                                location === "/projects" ? "nav-active" : ""
+                            }`}
+                        >
+                            <Link to="/projects" onClick={scrollToTop}>
+                                MY PROJECTS
+                            </Link>
                             <span className="nav-hover-left"></span>
                             <span className="nav-hover-right"></span>
                         </li>
-                        <li className={`nav-item group ${location === "/about" ? "nav-active" : ""}`}>
-                            <Link to="/about">ABOUT ME</Link>
+
+                        <li
+                            className={`nav-item group ${
+                                location === "/about" ? "nav-active" : ""
+                            }`}
+                        >
+                            <Link to="/about" onClick={scrollToTop}>
+                                ABOUT ME
+                            </Link>
                             <span className="nav-hover-left"></span>
                             <span className="nav-hover-right"></span>
                         </li>
-                        {/* <li className={`nav-item group ${location === "/contact" ? "nav-active" : ""}`}>
-                            <Link to="/contact">CONTACT</Link>
-                            <span className="nav-hover-left"></span>
-                            <span className="nav-hover-right"></span>
-                        </li> */}
+
                     </ul>
                 </nav>
             </div>
@@ -59,7 +98,9 @@ const Navbar: React.FC = () => {
                 >
                     <Icons
                         iconName="menu"
-                        className={`${isNavbar && "icon-animation"} fill-greenery-100`}
+                        className={`${
+                            isNavbar ? "icon-animation" : ""
+                        } fill-greenery-100`}
                     />
                     Semanur Bilada
                 </li>
@@ -67,40 +108,50 @@ const Navbar: React.FC = () => {
                 {/* Mobile Navbar Content */}
                 <ul
                     className={`${
-                        isNavbar ? "mobile-active opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                        isNavbar
+                            ? "mobile-active opacity-100 pointer-events-auto"
+                            : "opacity-0 pointer-events-none"
                     } absolute top-16 p-5 left-0 right-0 space-y-3 bg-greenery-500 text-greenery-100 rounded-xl shadow-2xl z-50 font-bold animation`}
                 >
-                    <li 
-                        className={`nav-item ${location === "/" ? "nav-active" : ""}`} 
-                        onClick={() => { setIsNavbar(false); scrollToTop(); }}
+                    <li
+                        className={`nav-item ${
+                            location === "/" ? "nav-active" : ""
+                        }`}
+                        onClick={() => {
+                            setIsNavbar(false);
+                            scrollToTop();
+                        }}
                     >
                         <Link to="/">HOME</Link>
                     </li>
 
-                    <li 
-                        className={`nav-item ${location === "/projects" ? "nav-active" : ""}`} 
-                        onClick={() => { setIsNavbar(false); scrollToTop(); }}
+                    <li
+                        className={`nav-item ${
+                            location === "/projects" ? "nav-active" : ""
+                        }`}
+                        onClick={() => {
+                            setIsNavbar(false);
+                            scrollToTop();
+                        }}
                     >
                         <Link to="/projects">MY PROJECTS</Link>
                     </li>
 
-                    <li 
-                        className={`nav-item ${location === "/about" ? "nav-active" : ""}`} 
-                        onClick={() => { setIsNavbar(false); scrollToTop(); }}
+                    <li
+                        className={`nav-item ${
+                            location === "/about" ? "nav-active" : ""
+                        }`}
+                        onClick={() => {
+                            setIsNavbar(false);
+                            scrollToTop();
+                        }}
                     >
                         <Link to="/about">ABOUT ME</Link>
                     </li>
-
-                    {/* <li 
-                        className={`nav-item ${location === "/contact" ? "nav-active" : ""}`} 
-                        onClick={() => { setIsNavbar(false); scrollToTop(); }}
-                    >
-                        <Link to="/contact">CONTACT</Link>
-                    </li> */}
                 </ul>
             </nav>
 
-            {/* Overlay for background darken */}
+            {/* Mobile Overlay */}
             {isNavbar && (
                 <div
                     className="fixed inset-0 bg-black bg-opacity-45 z-40 animation"
