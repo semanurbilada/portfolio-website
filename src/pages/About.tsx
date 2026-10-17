@@ -12,9 +12,9 @@ const About: React.FC = () => {
 
     return (
         <div className="page-default relative z-0 w-full min-h-screen">
-            <main className="w-full max-w-6xl mx-auto px-6 md:px-10 pt-36 md:pt-44 pb-24">
+            <main className="w-full max-w-6xl mx-auto px-6 md:px-10 pt-16 md:pt-44 pb-24">
                 {/* Page Header */}
-                <header className="text-center mb-14 md:mb-20">
+                <header className="text-center mb-10 md:mb-20">
                     <h1 className="font-fira md:text-4xl font-semibold">
                         <span className="bg-greenery-default text-2xl italic px-2">
                             Experience & Education
