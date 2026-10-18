@@ -315,7 +315,7 @@ export default function Projects() {
                             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-5">
                                 <div>
                                     <h3 className="font-fira text-xl md:text-2xl font-semibold text-start">
-                                        TALAZ H-USV
+                                        TALAZ USV
                                     </h3>
 
                                     <p className="text-sm text-gray-600 mt-2 text-start">
