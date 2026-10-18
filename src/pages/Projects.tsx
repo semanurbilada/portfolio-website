@@ -13,7 +13,7 @@ const talazImages = [
         caption: "Real-World Testing and Autonomous Navigation"
     },
     {
-        src: `${ASSETS}/talaz/talaz-3.jpeg`,
+        src: `${ASSETS}/talaz/talaz-3.jpg`,
         label: "PRU-İDA Team | TEKNOFEST 2025",
         caption: "Blue Homeland (Mavi Vatan) – Interdisciplinary Robotics Team"
     },
