@@ -1,21 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 const ASSETS = `${process.env.PUBLIC_URL}/assets/projects`;
 
 const talazImages = [
     {
         src: `${ASSETS}/talaz/talaz-1.jpg`,
-        label: "TALAZ H-USV",
-        caption: "Autonomous surface vehicle"
+        label: "TALAZ USV",
+        caption: "Autonomous Unmanned Surface Vehicle (USV)"
     },
     {
         src: `${ASSETS}/talaz/talaz-2.jpg`,
         label: "Field Tests",
-        caption: "Real-world testing and navigation"
+        caption: "Real-World Testing and Autonomous Navigation"
     },
     {
-        src: `${ASSETS}/talaz/talaz-3.jpg`,
-        label: "PRU Robotics Team",
-        caption: "Interdisciplinary engineering team"
+        src: `${ASSETS}/talaz/talaz-3.jpeg`,
+        label: "PRU-İDA Team | TEKNOFEST 2025",
+        caption: "Blue Homeland (Mavi Vatan) – Interdisciplinary Robotics Team"
+    },
+    {
+        src: `${ASSETS}/talaz/talaz-4.jpg`,
+        label: "PRU-İDA Team | Njord Challenge 2025",
+        caption: "Trondheim, Norway – International Autonomous USV Competition"
     }
 ];
 
@@ -42,7 +47,8 @@ const projects: Project[] = [
             "YOLOv5",
             "Deep Learning",
             "Computer Vision",
-            "Dataset Curation"
+            "Dataset Curation",
+            "BAP Project"
         ],
         github: "https://github.com/semanurbilada/BIP_BAP",
         publication:
@@ -140,7 +146,6 @@ const TechTag: React.FC<{ label: string }> = ({ label }) => (
     </span>
 );
 
-/* Image with fallback for files not yet added */
 const ProjectImage: React.FC<{
     src: string;
     alt: string;
@@ -173,6 +178,22 @@ const ProjectImage: React.FC<{
 
 export default function Projects() {
     const [activeImage, setActiveImage] = useState(0);
+    const [isGalleryPaused, setIsGalleryPaused] = useState(false);
+    // Automatically change TALAZ images every 5 seconds
+    useEffect(() => {
+        if (isGalleryPaused || talazImages.length <= 1) {
+            return;
+        }
+
+        const interval = window.setInterval(() => {
+            setActiveImage(
+                (prev) => (prev + 1) % talazImages.length
+            );
+        }, 3000);
+
+        return () => window.clearInterval(interval);
+    }, [isGalleryPaused]);
+
 
     const nextImage = () => {
         setActiveImage(
@@ -214,13 +235,23 @@ export default function Projects() {
                         </h2>
 
                         <span className="text-xs md:text-sm font-medium bg-greenery-500/30 rounded-full px-4 py-2">
-                            Robotics & AI
+                            AI & Robotics
                         </span>
                     </div>
 
                     <article className="bg-greenery-500/10 rounded-3xl overflow-hidden shadow-xl border border-greenery-500/20">
                         {/* TALAZ Image Gallery */}
-                        <div className="relative group">
+                        <div
+                            className="relative group"
+                            onMouseEnter={() => setIsGalleryPaused(true)}
+                            onMouseLeave={() => setIsGalleryPaused(false)}
+                            onFocusCapture={() => setIsGalleryPaused(true)}
+                            onBlurCapture={(event) => {
+                                if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                                    setIsGalleryPaused(false);
+                                }
+                            }}
+                        >
                             <ProjectImage
                                 key={activeImage}
                                 src={talazImages[activeImage].src}
@@ -247,7 +278,6 @@ export default function Projects() {
                                 >
                                     &#8594;
                                 </button>
-
                             </div>
 
                             {/* Image Caption */}
@@ -299,7 +329,8 @@ export default function Projects() {
                             </div>
 
                             <p className="about-p text-start leading-relaxed mb-5">
-                                Contributed to the development of a hybrid
+                                Initiated and contributed to the development of a
+                                BAP-funded (Scientific Research Project) hybrid
                                 unmanned surface vehicle platform integrating
                                 AI-based visual perception, autonomous navigation,
                                 sensor systems and communication technologies.
@@ -309,10 +340,14 @@ export default function Projects() {
                             </p>
 
                             <p className="about-p text-start leading-relaxed mb-7">
-                                The platform was developed through
-                                interdisciplinary teamwork and represented
+                                Founded and led the PRU-İDA team, coordinating
+                                interdisciplinary development. The team represented
                                 Piri Reis University at Njord Challenge 2025
-                                and TEKNOFEST 2025.
+                                and TEKNOFEST 2025,{" "}
+                                <strong className="font-bold text-gray-800">
+                                    and continues its activities through RoboBoat 2026
+                                    and future competitions.
+                                </strong>
                             </p>
 
                             <div className="flex flex-wrap justify-start gap-2 mb-8">
@@ -324,7 +359,8 @@ export default function Projects() {
                                     "Autonomous Navigation",
                                     "Python",
                                     "MAVLink",
-                                    "RFD900"
+                                    "RFD900",
+                                    "BAP Project"
                                 ].map((tag) => (
                                     <TechTag key={tag} label={tag} />
                                 ))}
@@ -347,7 +383,7 @@ export default function Projects() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center justify-center px-5 py-3 rounded-full border border-greenery-500 text-sm font-semibold hover:bg-greenery-500/20 transition-all duration-300"
                                 >
-                                    PRU Robotics GitHub ↗
+                                    PRU-Robotics GitHub ↗
                                 </a>
                             </div>
                         </div>
@@ -362,7 +398,7 @@ export default function Projects() {
                         </h2>
 
                         <p className="about-p text-start mt-3">
-                            Selected work in machine learning, image processing
+                            Selected studies in machine learning, image processing
                             and software engineering.
                         </p>
                     </div>
@@ -443,6 +479,29 @@ export default function Projects() {
                                 </div>
                             </article>
                         ))}
+                    </div>
+
+                    {/* More Projects on GitHub */}
+                    <div className="flex justify-center mt-12">
+                        <a
+                            href="https://github.com/semanurbilada?tab=repositories"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+                                inline-flex items-center justify-center
+                                px-7 py-3
+                                rounded-full
+                                border border-greenery-500
+                                text-sm font-semibold
+                                bg-greenery-500/10
+                                transition-all duration-300
+                                hover:bg-greenery-500/30
+                                hover:shadow-xl
+                                hover:-translate-y-1
+                            "
+                        >
+                            Explore More Projects on GitHub ↗
+                        </a>
                     </div>
                 </section>
 
