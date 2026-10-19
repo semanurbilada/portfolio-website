@@ -6,13 +6,6 @@ const Navbar: React.FC = () => {
     const location = useLocation().pathname;
     const [isNavbar, setIsNavbar] = useState(false);
 
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    }
-
     return (
         <header className="relative w-full">
             {/* Desktop Navbar */}
@@ -55,7 +48,7 @@ const Navbar: React.FC = () => {
                                 location === "/" ? "nav-active" : ""
                             }`}
                         >
-                            <Link to="/" onClick={scrollToTop}>
+                            <Link to="/">
                                 HOME
                             </Link>
                             <span className="nav-hover-left"></span>
@@ -67,7 +60,7 @@ const Navbar: React.FC = () => {
                                 location === "/projects" ? "nav-active" : ""
                             }`}
                         >
-                            <Link to="/projects" onClick={scrollToTop}>
+                            <Link to="/projects">
                                 MY PROJECTS
                             </Link>
                             <span className="nav-hover-left"></span>
@@ -79,7 +72,7 @@ const Navbar: React.FC = () => {
                                 location === "/about" ? "nav-active" : ""
                             }`}
                         >
-                            <Link to="/about" onClick={scrollToTop}>
+                            <Link to="/about">
                                 ABOUT ME
                             </Link>
                             <span className="nav-hover-left"></span>
@@ -117,10 +110,7 @@ const Navbar: React.FC = () => {
                         className={`nav-item ${
                             location === "/" ? "nav-active" : ""
                         }`}
-                        onClick={() => {
-                            setIsNavbar(false);
-                            scrollToTop();
-                        }}
+                        onClick={() => {setIsNavbar(false);}}
                     >
                         <Link to="/">HOME</Link>
                     </li>
@@ -129,10 +119,7 @@ const Navbar: React.FC = () => {
                         className={`nav-item ${
                             location === "/projects" ? "nav-active" : ""
                         }`}
-                        onClick={() => {
-                            setIsNavbar(false);
-                            scrollToTop();
-                        }}
+                        onClick={() => {setIsNavbar(false);}}
                     >
                         <Link to="/projects">MY PROJECTS</Link>
                     </li>
@@ -141,10 +128,7 @@ const Navbar: React.FC = () => {
                         className={`nav-item ${
                             location === "/about" ? "nav-active" : ""
                         }`}
-                        onClick={() => {
-                            setIsNavbar(false);
-                            scrollToTop();
-                        }}
+                        onClick={() => {setIsNavbar(false);}}
                     >
                         <Link to="/about">ABOUT ME</Link>
                     </li>
