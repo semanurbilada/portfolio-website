@@ -8,12 +8,14 @@ import Contact from "./pages/Contact.tsx";
 
 import Navbar from "./components/Navbar.tsx";
 import Icons from "./components/icons/Icons.js";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 function App() {
   return (
     <div className="custom-background w-full overflow-hidden">
       <div className="container relative flex flex-col gap-10 md:gap-0 items-center justify-center">
         <Router>
+          <ScrollToTop />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home /> } />
