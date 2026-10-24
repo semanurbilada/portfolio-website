@@ -3,22 +3,22 @@ const ASSETS = `${process.env.PUBLIC_URL}/assets/projects`;
 
 const talazImages = [
     {
-        src: `${ASSETS}/talaz/talaz-1.jpg`,
+        src: `${ASSETS}/talaz/talaz-1.webp`,
         label: "TALAZ USV",
         caption: "Autonomous Unmanned Surface Vehicle (USV)"
     },
     {
-        src: `${ASSETS}/talaz/talaz-2.jpg`,
+        src: `${ASSETS}/talaz/talaz-2.webp`,
         label: "Field Tests",
         caption: "Real-World Testing and Autonomous Navigation"
     },
     {
-        src: `${ASSETS}/talaz/talaz-3.jpg`,
+        src: `${ASSETS}/talaz/talaz-3.webp`,
         label: "PRU-İDA Team | TEKNOFEST 2025",
         caption: "Blue Homeland (Mavi Vatan) – Interdisciplinary Robotics Team"
     },
     {
-        src: `${ASSETS}/talaz/talaz-4.jpg`,
+        src: `${ASSETS}/talaz/talaz-4.webp`,
         label: "PRU-İDA Team | Njord Challenge 2025",
         caption: "Trondheim, Norway – International Autonomous USV Competition"
     }
@@ -150,26 +150,37 @@ const ProjectImage: React.FC<{
     src: string;
     alt: string;
     className?: string;
-}> = ({ src, alt, className = "" }) => {
-    const [failed, setFailed] = useState(false);
+    loading?: "lazy" | "eager";
+}> = ({
+    src,
+    alt,
+    className = "",
+    loading = "lazy"
+}) => {
+    const [failed, setFailed] = React.useState(false);
+
+    React.useEffect(() => {
+        setFailed(false);
+    }, [src]);
 
     return failed ? (
-        <div
-            className={`
-                flex items-center justify-center
-                bg-greenery-500/20
-                text-greenery-900
-                text-sm font-medium text-center p-6
-                ${className}
-            `}
-        >
+        <div className={`
+            flex 
+            items-center 
+            justify-center 
+            bg-greenery-500/20 
+            text-greenery-900 
+            text-sm p-6 
+            ${className}
+        `}>
             {alt}
         </div>
     ) : (
         <img
             src={src}
             alt={alt}
-            loading="lazy"
+            loading={loading}
+            decoding="async"
             onError={() => setFailed(true)}
             className={`object-cover ${className}`}
         />
@@ -203,9 +214,7 @@ export default function Projects() {
 
     const previousImage = () => {
         setActiveImage(
-            (index) =>
-                (index - 1 + talazImages.length) %
-                talazImages.length
+            (index) => (index - 1 + talazImages.length) % talazImages.length
         );
     };
 
@@ -256,6 +265,7 @@ export default function Projects() {
                                 key={activeImage}
                                 src={talazImages[activeImage].src}
                                 alt={talazImages[activeImage].label}
+                                loading="eager"
                                 className="w-full h-56 sm:h-80 md:h-[420px]"
                             />
 
