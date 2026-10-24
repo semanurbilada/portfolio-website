@@ -190,7 +190,7 @@ const Home: React.FC = () => {
                             {/* TALAZ Project Image */}
                             <div className="relative min-h-64 md:min-h-80">
                                 <img
-                                    src={`${process.env.PUBLIC_URL}/assets/projects/talaz/talaz-1.jpg`}
+                                    src={`${process.env.PUBLIC_URL}/assets/projects/talaz/talaz-1.webp`}
                                     alt="TALAZ H-USV autonomous surface vehicle"
                                     loading="lazy"
                                     className="w-full h-full absolute inset-0 object-cover"
