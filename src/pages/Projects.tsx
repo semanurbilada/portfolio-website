@@ -525,8 +525,9 @@ export default function Projects() {
                         </h2>
 
                         <p className="about-p max-w-3xl mx-auto text-center mb-10">
-                            Peer-reviewed research presented at IEEE conferences,
-                            covering computer vision and hybrid robotic systems.
+                            Peer-reviewed research presented at IEEE conferences
+                            focusing on AI-driven, Machine and Deep Learning computer vision and
+                            hybrid autonomous robotic systems.
                         </p>
 
                         <div className="flex flex-col gap-5">

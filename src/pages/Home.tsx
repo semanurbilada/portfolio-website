@@ -270,8 +270,8 @@ const Home: React.FC = () => {
                         </h2>
 
                         <p className="about-p text-center max-w-3xl mx-auto mb-10">
-                            Peer-reviewed research in computer vision
-                            and autonomous robotic systems.
+                            Peer-reviewed research in artificial intelligence,
+                            computer vision and autonomous robotic systems.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

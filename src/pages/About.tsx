@@ -88,9 +88,8 @@ const About: React.FC = () => {
                                 </p>
 
                                 <p className="about-p mt-3 leading-relaxed">
-                                    Worked on avionics communication systems
-                                    and participated in rocket operations,
-                                    field tests and R&D activities.
+                                    Worked on avionics communication systems and participated in R&D activities, 
+                                    field tests and rocket operations involving domestically developed hybrid rocket technologies.
                                 </p>
                             </li>
 
@@ -145,10 +144,12 @@ const About: React.FC = () => {
                                 </p>
 
                                 <p className="about-p mt-3 leading-relaxed">
-                                    Contributed to full-stack development,
-                                    primarily focusing on front-end technologies,
-                                    and participated in defense and aerospace
-                                    technology initiatives.
+                                    Selected as one of 100 university students for the
+                                    T3 Foundation's Rising Star Scholarship Program.
+                                    Contributed to front-end development within the
+                                    Information Technologies Coordination Office and
+                                    aerospace research through the Defense and
+                                    Aerospace Technologies Committee.
                                 </p>
                             </li>
 
@@ -175,9 +176,9 @@ const About: React.FC = () => {
                                 </p>
 
                                 <p className="about-p mt-3 leading-relaxed">
-                                    Developed a machine learning-based chatbot
-                                    for a full-stack application using
-                                    Python and TensorFlow.
+                                    As part of a full-stack development team,
+                                    developed a machine learning-based chatbot
+                                    using Python and TensorFlow.
                                 </p>
                             </li>
                         </ol>
