@@ -25,7 +25,7 @@ const publications = [
 
 const Home: React.FC = () => {
     return (
-        <div className="page-default my-0 w-full flex flex-col items-center justify-start">
+        <div className="page-default my-14 w-full flex flex-col items-center justify-start">
             <main className="w-full max-w-6xl mx-auto px-6 md:px-10">
                 {/* ================= HERO SECTION ================= */}
                 <section className="min-h-screen flex md:flex-row flex-col items-center justify-center md:gap-14 gap-8 py-24 md:py-16">
