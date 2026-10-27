@@ -34,6 +34,7 @@ function App() {
               <Icons
                 iconName="robot"
                 className="hidden md:inline md:hover:scale-110 animate-bounce animation"
+                size={""}
               />
             </div>
 
@@ -47,7 +48,8 @@ function App() {
               >
                 <Icons
                   iconName="github"
-                  className="md:hover:scale-110 animation"
+                  className="md:hover:scale-110 animation text-[#134e4a]"
+                  size={"45px"}
                 />
               </a>
 
@@ -58,6 +60,7 @@ function App() {
                 <Icons
                   iconName="mail"
                   className="md:hover:scale-110 animation"
+                  size={""}
                 />
               </a>
 
@@ -70,6 +73,7 @@ function App() {
                 <Icons
                   iconName="linkedin"
                   className="md:hover:scale-110 animation"
+                  size={""}
                 />
               </a>
             </div>
