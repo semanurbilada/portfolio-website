@@ -246,7 +246,7 @@ const About: React.FC = () => {
                             {/* PRU Robotics - Leadership & Activities */}
                             <div className="mt-5">
                                 <h3 className="font-fira text-lg md:text-xl font-semibold mb-5 text-center">
-                                    Leadership & R&D (AI-Robotics)
+                                    Leadership
                                 </h3>
 
                                 <div
