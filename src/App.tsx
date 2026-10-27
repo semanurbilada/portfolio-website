@@ -80,10 +80,53 @@ function App() {
           </div>
         </div>
 
-        <footer className="text-center w-full">
-          <ul className="text-sm text-greenery-900 md:-m-8 m-4">
-            <li>Copyright © 2026 | Made by Semanur BİLADA</li>
-          </ul>
+        {/* Footer */}
+        <footer className="w-full text-center pb-5 md:pb-8">
+          <div className="flex flex-col items-center justify-center gap-2">
+            {/* Copyright */}
+            <p className="text-xs md:text-sm text-greenery-900">
+              © 2026 Semanur BİLADA · Designed & Developed by Me
+            </p>
+
+            {/* Open Source Repository */}
+            <div className="flex items-center justify-center gap-2">
+              <span
+                className="
+                  inline-flex items-center
+                  px-2.5 py-1
+                  rounded-full
+                  bg-accent-cyan/10
+                  border border-accent-cyan/40
+                  text-[11px] font-medium
+                  text-greenery-900
+                "
+              >
+                Open Source
+              </span>
+
+              <a
+                href="https://github.com/semanurbilada/portfolio-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View this website's source code on GitHub"
+                className="
+                  inline-flex items-center gap-1.5
+                  text-xs font-semibold
+                  text-accent-purple
+                  transition-all duration-300
+                  hover:text-accent-blue
+                  hover:-translate-y-0.5
+                "
+              >
+                <Icons
+                  iconName="github"
+                  size="15px"
+                  className="text-current"
+                />
+                View Source Code ↗
+              </a>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
