@@ -37,13 +37,18 @@ module.exports = {
       },
       colors: {
         greenery: {
-          default: "#aef9e0", //custom : bg
-          transparent: "#aef9e080", //custom
-          100: '#d1fae5', //bg
-          300: '#6ee7b7', //bg
-          500: '#10b981',
-          700: '#047857',
-          900: '#134e4a'
+          default: "#baf5df", //custom : bg
+          transparent: "#baf5df80", //custom
+          100: "#defbf0", //bg
+          300: "#8ee7c6", //bg
+          500: "#39b98d",
+          700: "#1f8c72",
+          900: "#1f4d4a",
+        },
+        accent: {
+          cyan: "#20c8f4",
+          blue: "#1b73f0",
+          purple: "#3c37a6",
         },
         gray: {
           400: "#73787c",
