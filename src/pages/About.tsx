@@ -243,7 +243,7 @@ const About: React.FC = () => {
                             </div>
 
 
-                            {/* PRU Robotics - Leadership & Activities */}
+                            {/* Leadership (PRU-Robotics) */}
                             <div className="mt-5">
                                 <h3 className="font-fira text-xl md:text-2xl font-semibold mb-5 text-center">
                                     Leadership
@@ -264,7 +264,7 @@ const About: React.FC = () => {
                                 >
                                     {/* Club Logo & Title */}
                                     <div className="flex items-center gap-4 mb-6">
-                                        <div className="w-20 h-20 shrink-0 rounded-2xl bg-white/90 p-2 flex items-center justify-center shadow-sm">
+                                        <div className="w-20 h-20 shrink-0 rounded-2xl bg-white/90 p-0.5 flex items-center justify-center shadow-sm overflow-hidden">
                                             <img
                                                 src={`${process.env.PUBLIC_URL}/assets/prurobotics-logo.jpg`}
                                                 alt="PRU Robotics Club Logo"
