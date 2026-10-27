@@ -240,6 +240,116 @@ const About: React.FC = () => {
                                     Robotics, Computer Vision & Autonomous Systems
                                 </p>
                             </div>
+
+
+                            {/* PRU Robotics - Leadership & Activities */}
+                            <div className="mt-5">
+                                <h3 className="font-fira text-lg md:text-xl font-semibold mb-5 text-center">
+                                    Leadership & R&D (AI-Robotics)
+                                </h3>
+
+                                <div
+                                    className="
+                                        bg-greenery-500/10
+                                        border border-accent-cyan/40
+                                        rounded-3xl
+                                        p-6 md:p-7
+                                        shadow-lg
+                                        transition-all duration-300 ease-in-out
+                                        hover:shadow-xl
+                                        hover:-translate-y-1
+                                        hover:border-accent-blue/60
+                                    "
+                                >
+                                    {/* Club Logo & Title */}
+                                    <div className="flex items-center gap-4 mb-6">
+                                        <div className="w-20 h-20 shrink-0 rounded-2xl bg-white/90 p-2 flex items-center justify-center shadow-sm">
+                                            <img
+                                                src={`${process.env.PUBLIC_URL}/assets/prurobotics-logo.jpg`}
+                                                alt="PRU Robotics Club Logo"
+                                                loading="lazy"
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </div>
+
+                                        <div className="flex flex-col items-start">
+                                            <h4 className="font-fira text-lg md:text-xl font-bold text-accent-purple text-start">
+                                                PRU-Robotics
+                                            </h4>
+
+                                            <p className="text-sm text-gray-600 text-start mt-1">
+                                                Piri Reis University Robotics Club
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {/* Leadership Timeline */}
+                                    <div className="border-l-2 border-accent-cyan/60 ml-2 pl-5 space-y-5">
+                                        <div className="relative">
+                                            <span className="absolute -left-[27px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-purple" />
+                                            <h5 className="text-sm md:text-base font-semibold text-start">
+                                                Chairman of the Board
+                                            </h5>
+
+                                            <p className="text-xs md:text-sm text-gray-600 text-start mt-1">
+                                                Jun 2023 – May 2025
+                                            </p>
+                                        </div>
+
+                                        <div className="relative">
+                                            <span className="absolute -left-[27px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-blue" />
+
+                                            <h5 className="text-sm md:text-base font-semibold text-start">
+                                                Team Leader
+                                            </h5>
+
+                                            <p className="text-xs md:text-sm text-gray-600 text-start mt-1">
+                                                Oct 2022 – Sep 2025
+                                            </p>
+                                        </div>
+
+                                        <div className="relative">
+                                            <span className="absolute -left-[27px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-cyan" />
+
+                                            <h5 className="text-sm md:text-base font-semibold text-start">
+                                                Technical Team Member
+                                            </h5>
+
+                                            <p className="text-xs md:text-sm text-gray-600 text-start mt-1">
+                                                Dec 2021 – Oct 2022
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {/* Short Description */}
+                                    <p className="about-p text-sm leading-relaxed mt-6 text-start">
+                                        Progressed from technical team member to team leader
+                                        and club president, leading interdisciplinary robotics
+                                        projects and coordinating student teams.
+                                    </p>
+
+                                    {/* Club Link */}
+                                    <div className="flex justify-start mt-5">
+                                        <a
+                                            href="https://robotics.pirireis.edu.tr"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="
+                                                inline-flex items-center
+                                                text-sm font-semibold
+                                                text-accent-purple
+                                                border-b border-accent-purple/40
+                                                pb-1
+                                                transition-all duration-300
+                                                hover:text-accent-blue
+                                                hover:border-accent-blue
+                                            "
+                                        >
+                                            Explore PRU Robotics ↗
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
