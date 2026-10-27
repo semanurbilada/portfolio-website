@@ -245,7 +245,7 @@ const About: React.FC = () => {
 
                             {/* PRU Robotics - Leadership & Activities */}
                             <div className="mt-5">
-                                <h3 className="font-fira text-lg md:text-xl font-semibold mb-5 text-center">
+                                <h3 className="font-fira text-xl md:text-2xl font-semibold mb-5 text-center">
                                     Leadership
                                 </h3>
 
@@ -283,11 +283,11 @@ const About: React.FC = () => {
                                             </p>
                                         </div>
                                     </div>
-
+                                    
                                     {/* Leadership Timeline */}
                                     <div className="border-l-2 border-accent-cyan/60 ml-2 pl-5 space-y-5">
                                         <div className="relative">
-                                            <span className="absolute -left-[27px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-purple" />
+                                            <span className="absolute -left-[26px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-purple" />
                                             <h5 className="text-sm md:text-base font-semibold text-start">
                                                 Chairman of the Board
                                             </h5>
@@ -298,8 +298,7 @@ const About: React.FC = () => {
                                         </div>
 
                                         <div className="relative">
-                                            <span className="absolute -left-[27px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-blue" />
-
+                                            <span className="absolute -left-[26px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-blue" />
                                             <h5 className="text-sm md:text-base font-semibold text-start">
                                                 Team Leader
                                             </h5>
@@ -310,8 +309,7 @@ const About: React.FC = () => {
                                         </div>
 
                                         <div className="relative">
-                                            <span className="absolute -left-[27px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-cyan" />
-
+                                            <span className="absolute -left-[26px] top-1.5 w-2.5 h-2.5 rounded-full bg-accent-cyan" />
                                             <h5 className="text-sm md:text-base font-semibold text-start">
                                                 Technical Team Member
                                             </h5>
@@ -324,13 +322,13 @@ const About: React.FC = () => {
 
                                     {/* Short Description */}
                                     <p className="about-p text-sm leading-relaxed mt-6 text-start">
-                                        Progressed from technical team member to team leader
-                                        and club president, leading interdisciplinary robotics
-                                        projects and coordinating student teams.
+                                        Progressed from technical member to club president, 
+                                        leading university-funded interdisciplinary robotics projects 
+                                        and fostering student-led R&D initiatives.
                                     </p>
 
                                     {/* Club Links */}
-                                    <div className="flex flex-wrap items-center justify-start gap-5 mt-6">
+                                    <div className="flex flex-wrap items-center justify-center gap-5 mt-6">
                                         {/* Official Website */}
                                         <a
                                             href="https://robotics.pirireis.edu.tr"
